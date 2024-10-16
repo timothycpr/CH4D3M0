@@ -25,24 +25,41 @@ In the vehicle CHAdeMO interface, an EVTV Due is spliced into the vehicle CANBus
 Data from these two systems is then used to control a CHAdeMO charging session, ultimately connecting the vehicle HVDC bus to that of the charger.
 
 In total, the connection requires the following physical hardware:
-1 EVTV Due (http://store.evtv.me/proddetail.php?prod=EVTVDue2) ARM-based microcontroller with CAN Tranceiver
-1 EVAL-ADM3052EBZ (https://www.digikey.com/en/products/detail/analog-devices-inc/EVAL-ADM3052EBZ/2709315) Isolated CAN Transceiver
-1 HL-52S (https://www.newegg.com/p/285-0018-000E9?item=9SIA4W246U6059) Optocoupled 5V relays
-1 PST-DC2405-10 (https://www.powerstream.com/dc-24V-5V.htm) or similarly capable, Fully Isolated DC/DC Converter with 5V output
-1 12V SPDT relay and socket/harness (https://www.summitracing.com/parts/via-80237)
-2 3.3V optoisolators with breakouts (https://www.sparkfun.com/products/9118)
-2 Gigavac GX12BA Sealed Contactors (225A) (https://www.waytekwire.com/item/77088/225A-GX12-Sealed-12V-Contactor/) 12V HVDC Normally open contactors
-1 CHAdeMO inlet (https://shop.quickchargepower.com/CHAdeMO-Inlets-YazInlet.htm) with harness
-1 Optional USB passthrough connector and USB A (host) to USB B (client)
-Resistors: +/-5%; 100 Ohm, 200 Ohm, 1 KOhm, two 15 KOhm.
+
+  1 EVTV Due (http://store.evtv.me/proddetail.php?prod=EVTVDue2) ARM-based microcontroller with CAN Tranceiver
+
+  1 EVAL-ADM3052EBZ (https://www.digikey.com/en/products/detail/analog-devices-inc/EVAL-ADM3052EBZ/2709315) Isolated CAN Transceiver
+
+  1 HL-52S (https://www.newegg.com/p/285-0018-000E9?item=9SIA4W246U6059) Optocoupled 5V relays
+
+  1 PST-DC2405-10 (https://www.powerstream.com/dc-24V-5V.htm) or similarly capable, Fully Isolated DC/DC Converter with 5V output
+
+  1 12V SPDT relay and socket/harness (https://www.summitracing.com/parts/via-80237)
+
+  2 3.3V optoisolators with breakouts (https://www.sparkfun.com/products/9118)
+
+  2 Gigavac GX12BA Sealed Contactors (225A) (https://www.waytekwire.com/item/77088/225A-GX12-Sealed-12V-Contactor/) 12V HVDC Normally open contactors
+
+  1 CHAdeMO inlet (https://shop.quickchargepower.com/CHAdeMO-Inlets-YazInlet.htm) with harness
+
+  1 Optional USB passthrough connector and USB A (host) to USB B (client)
+
+  Resistors: +/-5%; 100 Ohm, 200 Ohm, 1 KOhm, two 15 KOhm.
 
 It seems possible to consolidate the optoisolators, 5V relays, second CAN tranceiver and resistors into a shield to simplify wiring. (Development in progress)
 
 In addition to those signal path components, the following physical components are utilized
-1 plastic project box with grid insert
-1 replacement TCM cover (passthrough for HVDC wiring)
-6 crimp fit ring terminals ("Cable lugs"), 6 weatherproof passthroughs
-2 8-position terminal blocks
-1 7-wire weatherproof passthrough for CHAdeMO signal wiring
-1 4-wire or 2 2-wire weatherproof passthroughs for 12V/Ground/CANH/CANL
-~30 crimp on fork terminals
+
+  1 plastic project box with grid insert
+
+  1 replacement TCM cover (passthrough for HVDC wiring)
+
+  6 crimp fit ring terminals ("Cable lugs"), 6 weatherproof passthroughs
+
+  2 8-position terminal blocks
+
+  1 7-wire weatherproof passthrough for CHAdeMO signal wiring
+
+  1 4-wire or 2 2-wire weatherproof passthroughs for 12V/Ground/CANH/CANL
+
+  ~30 crimp on fork terminals
