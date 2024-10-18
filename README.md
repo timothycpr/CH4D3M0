@@ -4,7 +4,7 @@ The software and information provided here relates to hazardous and potentially 
 
 Anyone that utiizes this infomration/code must assume full responsibility for their actions and ensure prudent & safe operation. While good faith effort has been made to implement safety checks and fail-safes in code and hardware, I can in no way guarantee that using this is safe.
 
-Similarly, modification an EV to add after-market fast charging creates the same risks to people and property. Anyone implemeting any of these methods must assume full responsibility for their actions.
+Similarly, modification of an EV to add after-market fast charging creates the same risks to people and property. Anyone implemeting any of these methods must assume full responsibility for their actions.
 
 I will not be held liable for the actions of others relating to any use of this code, information or hardware.
 
