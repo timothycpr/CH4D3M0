@@ -46,7 +46,7 @@ In total, the connection requires the following physical hardware:
 
   Resistors: +/-5%; 100 Ohm, 200 Ohm, 1 KOhm, two 15 KOhm.
 
-It seems possible to consolidate the optoisolators, 5V relays, second CAN tranceiver and resistors into a shield to simplify wiring. (Development in progress)
+After validating operation, all components have been consolidated onto a single shield, minus the HVDC contactors themselves. Components for re-inverting f/g/d1/d2 have been omitted and negated in code.
 
 In addition to those signal path components, the following physical components are utilized
 
