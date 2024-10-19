@@ -38,7 +38,7 @@ In total, the connection requires the following physical hardware:
 
   2 3.3V optoisolators with breakouts (https://www.sparkfun.com/products/9118)
 
-  2 Gigavac GX12BA Sealed Contactors (225A) (https://www.waytekwire.com/item/77088/225A-GX12-Sealed-12V-Contactor/) 12V HVDC Normally open contactors
+  2 Gigavac GX14BA Sealed Contactors (350A) (https://octopart.com/gx14ba-gigavac-24213166) 12V HVDC Normally open contactors
 
   1 CHAdeMO inlet (https://shop.quickchargepower.com/CHAdeMO-Inlets-YazInlet.htm) with harness
 
