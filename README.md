@@ -30,9 +30,9 @@ In total, the connection requires the following physical hardware:
 
   1 EVAL-ADM3052EBZ (https://www.digikey.com/en/products/detail/analog-devices-inc/EVAL-ADM3052EBZ/2709315) Isolated CAN Transceiver
 
-  1 HL-52S (https://www.newegg.com/p/285-0018-000E9?item=9SIA4W246U6059) Optocoupled 5V relays
+  1 HL-52S (https://www.newegg.com/p/285-0018-000E9?item=9SIA4W246U6059) Inverting Optocoupled 5V relays
 
-  1 PST-DC2405-10 (https://www.powerstream.com/dc-24V-5V.htm) or similarly capable, Fully Isolated DC/DC Converter with 5V output
+  1 PST-DC2012 (https://www.powerstream.com/DC3611.htm) or similarly capable, Fully Isolated DC/DC Converter with 12V output. (Original supply board was marked with a 5V model number - PST-DC2405 - but tested as 12V out)
 
   1 12V SPDT relay and socket/harness (https://www.summitracing.com/parts/via-80237)
 
