@@ -1,13 +1,13 @@
 /*
-This code is forked from a private project from Sefs on the MyFocusElectric.com forum.
+This code is forked from a private project of Sefs on the MyFocusElectric.com forum.
 
 It is a work in progress and is provided with no warranty of any kind, under the licensing specified at https://github.com/timothycpr/CH4D3M0
 
-It targets an Arduino Due with a SAM3X8E processor to operate CANBus monitoring on a separate thread.
+It targets an Arduino Due with a SAM3X8E processor to operate CANBus monitoring on a separate thread from the charge state monitoring.
 
-It originally paired to active low isolated relays and has been modified in parallel with prototyping of the CH4D3M0 shield
+It originally paired to active low isolated relays and re-inverted optoisolators - and has been modified in parallel with prototyping of the CH4D3M0 shield
 
-Depending on the topography of the circuit selected, it may require inputs or outputs to be inverted from the current defaults.
+Depending on the topography of the circuit selected, it may require input or output controls to be inverted from the settings set below.
 */
 
 #include <SPI.h>
@@ -20,7 +20,7 @@ Depending on the topography of the circuit selected, it may require inputs or ou
 
 #define Serial SerialUSB
 
-// TODO: Add proximity monitor, "Kicker" control, CANBus power monitor and CANBus power indicator
+// TODO: Add proximity monitor, CANBus power monitor and CANBus power indicator
 
 /*
 Define classes and templates for future use
@@ -63,9 +63,7 @@ class EEPROMvariables {
     CAN_FRAME outFrame;
 };
 
-/*
-Initialize variables
-*/
+// Initialize variables
 StringTable stringTable;
 EEPROMvariables myVars;
 uint16_t page = 475;
@@ -163,7 +161,7 @@ void setup() { // Code to run as the initial configuration of the system
 
 //  Input and output values may need to be inverted depending on the hardware implementation utilized.
 //  Optocouplers invert inputs by default, though some include an additional transistor that can invert the output back.
-//  This code was written for relays with optocouplers and did not re-invert the signal, making them active-low control (activate when a control pin is tied to ground)
+//  This code was written for relays with optocouplers that did not re-invert the signal, making them active-low control (activate when a control pin is tied to ground)
 //  This code was written for re-inverting optocouplers monitoring inputs f and g and uses active high logic (d1 or d2 going "high" will create an output that is also "high")
 //  Should circuit modifications be made, digital reads may need to be inverted by applying the NOT modifier (variable = !digitalRead(pin_num)) and writes should be replaced with their complementary value
   pinMode(k, OUTPUT); // 25 Relay control is active low
